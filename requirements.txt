@@ -1,0 +1,41 @@
+# AI Tutor - Core Dependencies
+# Data Science & Machine Learning
+torch>=2.0.0
+numpy>=1.21.0
+pandas>=1.5.0
+
+# Natural Language Processing & Embeddings
+transformers>=4.21.0
+sentence-transformers>=2.2.0
+tokenizers>=0.13.0
+
+# Vector Search & RAG
+faiss-cpu>=1.7.3
+# Note: Use faiss-gpu instead of faiss-cpu if you have NVIDIA GPU support
+
+# Web Scraping & Text Processing
+beautifulsoup4>=4.11.0
+requests>=2.28.0
+lxml>=4.9.0
+
+# Web Interface
+gradio>=3.40.0
+
+# Utilities & Data Handling
+pickle-mixin>=1.0.2
+difflib2>=2.0.0
+
+# Optional GPU Acceleration (uncomment if you have NVIDIA GPU)
+# cudf-cu11>=23.0.0  # RAPIDS cuDF for GPU-accelerated DataFrames
+# cupy-cuda11x>=12.0.0  # GPU arrays
+# rapids-cudf>=23.0.0  # Full RAPIDS suite
+
+# Development & Testing (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=5.0.0
+# mypy>=0.991
+
+# Performance Monitoring (optional)
+# psutil>=5.9.0
+# memory-profiler>=0.60.0
