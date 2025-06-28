@@ -50,7 +50,7 @@ graph TB
     K --> L[Model Loading Strategy]
 ```
 
-### 🧠 Core Components
+### **1.🧠 Core Components**
 
 #### **RAG Pipeline**
 - **Text Extraction**: BeautifulSoup-based web scraping from curated sources
@@ -71,7 +71,7 @@ graph TB
 - **Coding Challenges**: Pandas-to-cuDF conversion exercises with performance simulation
 - **Progress Tracking**: XP system with achievement unlocks
 
-## 📚 Knowledge Base Sources
+## **2.📚 Knowledge Base Sources**
 
 The RAG system integrates content from **40+ authoritative sources**:
 
@@ -103,31 +103,6 @@ The RAG system integrates content from **40+ authoritative sources**:
 - [LangGraph RAG Tutorials](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/)
 - [GPU Hardware Comparisons](https://www.nvidia.com/en-us/geforce/graphics-cards/compare/)
 
-## 🛠 Installation & Setup
-
-### **Prerequisites**
-- Python 3.8+ (recommended: 3.10+)
-- CUDA 11.8+ (optional, for GPU acceleration)
-- 8GB+ RAM (16GB+ recommended for large models)
-- 5GB+ storage space for models and cache
-
-### **1. Clone Repository**
-```bash
-git clone <repository-url>
-cd AI-Tutor
-```
-
-### **2. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-**Optional GPU Acceleration:**
-```bash
-# For NVIDIA GPU support
-pip install faiss-gpu  # replaces faiss-cpu
-pip install cudf-cu11  # RAPIDS cuDF for GPU DataFrames
-```
 
 ### **3. Initialize RAG System**
 The system automatically handles:
@@ -203,8 +178,8 @@ rm src/chunks.pkl src/faiss.index
 ```
 
 #### **Model Configuration**
-```python
-# In Final_AITutor.py
+```
+# In SemiSocratic_AI_Tutor.ipynb
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"  # Embedding model
 LLM_MODEL = "NousResearch/Hermes-2-Pro-Mistral-7B"     # Language model
 
@@ -217,7 +192,7 @@ similarity_threshold = 0.7  # Minimum similarity score
 ### **Performance Tuning**
 
 #### **GPU Optimization**
-```python
+```
 # Automatic device detection and optimization
 device_info = {
     'main_device': 'cuda',
@@ -296,16 +271,10 @@ QUIZ_CATEGORIES = {
 ## 🚀 Future Roadmap
 
 ### **Version 2.0 Features**
-- [ ] **Multi-modal RAG**: Integration of images, videos, and interactive content
+- [ ] **Multi-modal RAG**: Integration of audio, videos, and interactive content
 - [ ] **Real-time Updates**: Live synchronization with documentation sources
 - [ ] **Collaborative Learning**: Multi-user sessions and shared progress
 - [ ] **Advanced Analytics**: Learning pattern analysis and personalized recommendations
-
-### **Version 2.5 Features**
-- [ ] **Voice Interface**: Speech-to-text queries and audio responses
-- [ ] **AR/VR Integration**: Immersive 3D visualization of data concepts
-- [ ] **Cloud Deployment**: Scalable infrastructure with API access
-- [ ] **Mobile App**: iOS/Android companion applications
 
 ### **Research Integrations**
 - [ ] **LangGraph Integration**: Advanced agentic RAG workflows
@@ -314,19 +283,6 @@ QUIZ_CATEGORIES = {
 - [ ] **Knowledge Graph**: Semantic relationship mapping
 
 ## 🤝 Contributing
-
-### **Development Setup**
-```bash
-# Fork the repository
-git clone https://github.com/your-username/AI-Tutor.git
-cd AI-Tutor
-
-# Create development environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
 ### **Contribution Guidelines**
 1. **Fork & Branch**: Create feature branches from `main`
 2. **Code Quality**: Follow PEP 8, add type hints, include docstrings
@@ -353,20 +309,13 @@ MIT License - Feel free to use, modify, and distribute this educational tool!
 	•	🎨 Gradio — Simplified interactive UI for learners.
 	•	🚀 RAPIDS (cuDF) — GPU DataFrame computation at blazing speed.
 	•	📚 Doc Maintainers — The open source educators of the world.
-- ** ASU Sol Supercomputer**: GPU resource to execute the RAG based LLM model.
-- **🤗 Hugging Face**: Transformers, SentenceTransformers, and model hosting
-- **🔍 FAISS**: High-performance similarity search by Facebook AI Research  
-- **🎨 Gradio**: Beautiful and intuitive web interface framework
-- **🚀 RAPIDS**: GPU-accelerated data science ecosystem by NVIDIA
-- **📚 Documentation Sources**: All the amazing teams maintaining data science docs
 
 ### **Citation**
 ```bibtex
 @software{m6_ai_tutor,
   title={M^6 AI Tutor: Intelligent Data Science \& GPU Computing Assistant},
-  author={Your Name},
+  author={Neha Tiwari},
   year={2025},
-  url={https://github.com/your-username/AI-Tutor},
   note={RAG-enhanced educational platform for data science learning}
 }
 ```
